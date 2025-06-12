@@ -1,7 +1,7 @@
 {
   "name": "passkeyme-ionic-cap-plugin",
-  "version": "0.0.1",
-  "description": "SDK for Passkeye - Passkeys for Ionic Apps",
+  "version": "0.0.9",
+  "description": "SDK for Passkeyme - Passkeys for Ionic Apps",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -38,30 +38,31 @@
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
-    "docgen": "docgen --api PasskeymeSDKPlugin --output-readme README.md --output-json dist/docs.json",
+    "docgen": "npx @capacitor/docgen --api PasskeymeSDKPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/android": "^6.0.0",
-    "@capacitor/core": "^6.0.0",
-    "@capacitor/docgen": "^0.2.2",
-    "@capacitor/ios": "^6.0.0",
-    "@ionic/eslint-config": "^0.3.0",
+    "@capacitor/android": "^7.2.0",
+    "@capacitor/core": "^7.2.0",
+    "@capacitor/docgen": "^0.3.0",
+    "@capacitor/ios": "^7.2.0",
+    "@ionic/eslint-config": "^0.4.0",
     "@ionic/prettier-config": "^4.0.0",
-    "@ionic/swiftlint-config": "^1.1.2",
-    "eslint": "^9.2.0",
-    "prettier": "~3.2.5",
-    "prettier-plugin-java": "~2.6.0",
-    "rimraf": "^5.0.7",
-    "rollup": "^4.17.2",
-    "swiftlint": "^1.0.2",
-    "typescript": "~5.4.5"
+    "@ionic/swiftlint-config": "^2.0.0",
+    "@types/node": "^18.0.0",
+    "eslint": "^9.28.0",
+    "prettier": "~3.5.3",
+    "prettier-plugin-java": "~2.6.7",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.41.1",
+    "swiftlint": "^2.0.0",
+    "typescript": "~5.8.3"
   },
   "peerDependencies": {
-    "@capacitor/core": "^6.0.0"
+    "@capacitor/core": "^7.0.0"
   },
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
@@ -75,9 +76,6 @@
     "android": {
       "src": "android"
     }
-  },
-  "dependencies": {
-    "passkeyme-ionic-cap-plugin": "^0.0.1",
-    "passkeyme-web-sdk": "^0.1.2"
   }
 }
+
