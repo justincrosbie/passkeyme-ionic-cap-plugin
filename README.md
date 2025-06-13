@@ -1,6 +1,6 @@
 ![alt text](https://passkeyme.com/docs/img/passkeyme-logo-removebg-preview.png)
 
-# ionic-passkeys
+# passkeyme-ionic-cap-plugin
 
 Passkeyme for Ionic Apps
 

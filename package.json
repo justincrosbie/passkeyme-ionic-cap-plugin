@@ -1,6 +1,6 @@
 {
   "name": "passkeyme-ionic-cap-plugin",
-  "version": "0.0.9",
+  "version": "0.0.13",
   "description": "SDK for Passkeyme - Passkeys for Ionic Apps",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -12,7 +12,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "PasskeymeSDK.podspec"
+    "PasskeymeIonicCapPlugin.podspec"
   ],
   "author": "Justin Crosbie",
   "license": "MIT",
@@ -53,6 +53,7 @@
     "@ionic/prettier-config": "^4.0.0",
     "@ionic/swiftlint-config": "^2.0.0",
     "@types/node": "^18.0.0",
+    "@ionic/react-router": "^8.6.1",
     "eslint": "^9.28.0",
     "prettier": "~3.5.3",
     "prettier-plugin-java": "~2.6.7",

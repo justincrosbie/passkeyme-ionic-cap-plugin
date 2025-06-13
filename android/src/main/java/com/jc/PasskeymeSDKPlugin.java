@@ -7,7 +7,7 @@ package com.jc;
  import com.getcapacitor.PluginMethod;
  import com.getcapacitor.annotation.CapacitorPlugin;
 
-@CapacitorPlugin(name = "PasskeymeSDK")
+@CapacitorPlugin(name = "PasskeymeIonicCapPlugin")
 public class PasskeymeSDKPlugin extends Plugin {
     private static final String TAG = "PasskeymeSDKPlugin";
 
